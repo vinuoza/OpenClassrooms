@@ -1,0 +1,4 @@
+vim historique_commandes
+:wq
+git add historique_commandes
+git push -m "creation du fichier d'historique + add et commit"
