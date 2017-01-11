@@ -1,4 +1,31 @@
 vim historique_commandes
-:wq
 git add historique_commandes
-git push -m "creation du fichier d'historique + add et commit"
+git commit -m "creation du fichier d'historique + add et commit"
+git push origin master
+
+vim README.txt
+git add README.txt
+
+rm README.md
+
+git status
+
+vim historique_commandes
+:wq
+
+git commit -m "ajout des dernieres lignes de commandes + ajout fichier README.txt + suppression README.md devenu inutile"
+
+vim README.txt
+vim liste_fichiers
+git add liste_fichiers
+vim historique_commandes
+
+git commit -m "ajout du fichier liste_fichiers + edition du README.txt"
+
+git push origin master
+
+git add historique_commandes
+git add README.txt
+git rm README.md
+
+git commit -m "commit des modifications de README.txt et historique_commandes qui n'avaient pas ete add + suppression de README.md qui n'a pas ete envoyee au remote"
